@@ -10,9 +10,15 @@
 
 ## HP-41: Tools for the Amar Role-Playing Game
 
-Two essential tools from the [Amar RPG](http://d6gaming.org) brought to the HP-41 calculator:
-- **O6**: Open-ended D6 dice roller
-- **Random Encounter Generator**: Generate encounters for your Amar campaigns
+Essential tools from the [Amar RPG](http://d6gaming.org) for the HP-41 calculator:
+- **O6**: Open-ended D6 dice roller with critical/fumble detection
+- **Random Encounter Generator**: Complete encounter generation with basic NPC stats
+- **ROM Module**: Available as both FOCAL programs and pluggable ROM module
+
+## Two Versions Available
+
+1. **FOCAL Programs** (`src/` directory): Standard HP-41 programs you type in
+2. **ROM Module** (`rom/` directory): Pluggable module for HP-41CL/DM-41X/emulators with **complete NPC stats generation**
 
 ### O6 - Open-Ended Dice Roller
 
@@ -173,14 +179,30 @@ Press A (roll O6 for initiative)
 4. **Multiple encounters**: Press B repeatedly for different encounters
 5. **Attitude modifier**: Adjust based on party actions and situation
 
+## ROM Module Version - Complete Stats!
+
+The ROM module version (`rom/` directory) adds **complete NPC stats generation**:
+
+After showing encounter type, number, and attitude, it prompts for SIZE and generates:
+
+- **HP** (Hit Points): Health/durability
+- **AP** (Armor Points): Damage absorption
+- **Weapon Stats**:
+  - **INI** (Initiative): Who acts first
+  - **OFF** (Offensive): Attack skill
+  - **DEF** (Defensive): Evasion/parry
+  - **DAM** (Damage): Hurt dealt
+  - **RNG** (Range): Distance for ranged weapons
+- **MD** (Mental Defense): Resistance to magic/psionics
+
+Stats scale with encounter level and creature type. See `rom/README.md` for details.
+
 ## Differences from Full Amar Tools
 
-This HP-41 version provides the core encounter generation functionality:
-- **Included**: Encounter type, number, attitude determination
-- **Not included**: Full NPC stat generation, equipment, spells, names
-- **Simplified**: Basic encounter info to speed up gameplay
+The FOCAL version provides basic encounter info (type, number, attitude).
+The ROM version adds complete basic NPC stats for immediate gameplay.
 
-For full NPC generation with complete statistics, use the [Amar Tools](https://github.com/isene/Amar-Tools) on your computer.
+For full detailed NPC generation with complete skill lists, equipment, spells, and names, use the [Amar Tools](https://github.com/isene/Amar-Tools) on your computer.
 
 ## Links
 

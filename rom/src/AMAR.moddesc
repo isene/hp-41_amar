@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModFile FileFormat="MOD1" Title="AMAR.ROM" Version="1A" PartNumber="" Author="Geir Isene" Copyright="Geir Isene" License="Public Domain" Comments="HP-41 tools for the Amar RPG. See http://d6gaming.org" Category="2" Hardware="0">
+  <Page Name="AMAR" Identity="AR1A" Page="Any" PageGroup="0" Bank="1" BankGroup="0" RAM="0" WriteProtect="0" FAT="1"/>
+</ModFile>
